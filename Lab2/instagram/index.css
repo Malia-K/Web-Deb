@@ -1,0 +1,182 @@
+body{
+    margin: 0;
+    background-color: #fafafa ;
+    font-family:'Segoe UI', Arial, Helvetica, sans-serif;
+    width: 100%;
+    min-height:660px;
+    padding: 45px 0 55px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+}
+
+
+.phone-gallery{
+    min-width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    float: left;
+    margin-right: 30px;
+}
+
+
+.register-side{
+    min-width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    float: right;
+
+}
+
+
+.white-box{
+    display: flex;
+    width: 45%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    padding: 12px;
+    border: 2px solid rgb(235, 235, 235);
+    margin-top: 10px;
+
+}
+
+
+input{
+    width: 80%;
+    height: 5vh;
+    background-color: #fafafa;
+    border-radius: 4px;
+    border: 2px solid rgb(235, 235, 235);
+    margin: 5px;
+    padding-left: 8px;
+    color:rgb(235, 235, 235);
+    font-size: 12px;
+}
+
+#login-button{
+    width: 84%;
+    height: 5vh;
+    border-radius: 3px;
+    border:none;
+    background-color: #4db5f9;
+    color: white;
+    margin: 5px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#devider{
+    width: 88%;
+    display: flex;
+    flex-direction: row;
+    color:rgb(167, 167, 167);
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.line{
+    width: 40%;
+    height: 1px;
+    background-color: rgb(177, 177, 177);
+}
+
+
+.facebook-register{
+    width: 52%;
+    height: 4vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+}
+
+#link{
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    text-decoration: none;
+    color:#3a559f;
+}
+
+#passw-forgot{
+    font-size: 12px;
+    text-decoration: none;
+    color:#3a559f;
+}
+
+
+.apps{
+    display: flex;
+    width: 45%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+
+.app-links{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 6vh;
+    justify-content: space-evenly
+}
+
+
+footer{
+    height: 15vh;
+    margin-top: 25px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color:rgb(123, 123, 123);
+}
+
+.footer-links{
+    width: 54%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.link-decor{
+    color:inherit;
+    text-decoration: none;
+}
+
+
+.info{
+    justify-content: center;
+    column-gap: 12px;
+}
