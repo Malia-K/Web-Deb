@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src = "index.js"></script>
+    
     <script src="https://kit.fontawesome.com/7e16ff891f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href= "index.css">
     <title>To-do app</title>
 </head>
 <body>
     <div class = "header">
-        <p>Alima's To-Do's</p>
+        <p>Alima's To Do's</p>
     </div>
-    <div class = "content">
-        <div class="addToDo">
-            <input class = "writeData" placeholder="Add a Task">
-            <button class = "addData"><i class="fa-solid fa-plus"></i></button>
-        </div>
+    <div class = "container">
+        <form class="todo-getter">
+            <input class = "inputData" type = "text" placeholder="Add a Task...">
+            <button type = "submit" class = "addData" ><i class="fa-solid fa-plus" id = "plus_button"></i></button>
+        </form>
+        
+        <ul class="todo-items">
+        </ul>
     </div>
+    <script src = "index.js"></script>
 </body>
 </html>
