@@ -47,7 +47,7 @@ function showTodos(todos){
             <div class = "to-do">
                 <input type = "checkbox" class = "checkbox" ${checked}>
                 <div class = "todo-content">${item.name}</div>
-                <button class = "delete-button pointer-events-none"><i class="fa-solid fa-trash" id = "delete-button" ></i></button>
+                <button class = "delete-button"><i class="fa-solid fa-trash" id = "delete-button-icon" ></i></button>
             </div>
         `;
         todoItems.append(li);
