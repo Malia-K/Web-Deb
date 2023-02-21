@@ -6,7 +6,7 @@ export interface Products {
 }
 
 
-export const main_products = [
+export const products = [
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd1/hbe/49348562681886/sony-playstation-5-belyj-100746577-1-Container.jpg",
         name: "Игровая приставка Sony PlayStation 5 белый",

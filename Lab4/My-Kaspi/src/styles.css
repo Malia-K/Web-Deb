@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+.content{
+    margin: 16px;
+    width: 100%;
+  }
+  
+  
+  .main-product{
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 10px 10px 20px 30px ;
+    border: 2px solid rgba(195, 194, 194, 0.43);
+    justify-self: center;
+    /* align-self: center; */
+  
+  }
+  
+  .text-content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    border-left: 2px solid rgba(195, 194, 194, 0.43);
+    padding: 8px;
+    justify-content: space-evenly;
+  }
+  
+  .share-button{
+    width: 15%;
+  }
+  
+  
