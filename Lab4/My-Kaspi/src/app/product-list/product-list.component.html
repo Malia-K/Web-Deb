@@ -1,8 +1,7 @@
-<h2>Kaspi Products</h2>
-
-<div *ngFor = "let product of main_products" class = "main-product">
-    <img src = {{product.img}} alt = "photo" width="250px"  height="300px" style="margin: 8px;">
-    
+<div *ngFor = "let product of products" class = "main-product">
+    <div class="crop">
+        <img src = {{product.img}} alt = "photo"  class = "img-crop" >  
+    </div>
     <div class = "text-content">
         <h3>
             <a [title] = "product.name + ' details'">
