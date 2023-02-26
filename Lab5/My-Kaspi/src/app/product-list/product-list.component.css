@@ -1,0 +1,58 @@
+.main-product{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  
+    border: 2px solid rgba(195, 194, 194, 0.43);
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    box-shadow: 4px 4px 5px 1px rgb(0 0 0 / 8%);
+  
+}
+
+
+.crop{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 290px;
+}
+.img-crop{
+    width: 75%;
+    /* height: 90%; */
+    object-fit: cover;
+    object-position: center;
+    overflow: hidden;
+}
+
+.text-content{
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 20px; */
+    border-top: 2px solid rgba(195, 194, 194, 0.43);
+    padding: 10px;
+    justify-content: space-evenly;
+}
+
+.rate-price-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.detail-button{
+    background-color: rgb(241,70,53);
+    color: white;
+    width: 30%;
+    height: 30px;
+    margin-left:60%;
+    border-radius: 4px;
+    border: none;
+}
+.right-border{
+    padding-right: 15%;
+    border-right: 2px solid  rgba(195, 194, 194, 0.43);
+
+}
