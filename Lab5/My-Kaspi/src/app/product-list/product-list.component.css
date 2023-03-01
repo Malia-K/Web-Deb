@@ -1,3 +1,11 @@
+.product-list{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 .main-product{
     display: flex;
     flex-direction: column;
@@ -56,3 +64,39 @@
     border-right: 2px solid  rgba(195, 194, 194, 0.43);
 
 }
+
+
+.filter-side{
+    float: left;
+    border-right: 1px solid #ccc;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.tablinks{
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+.tablinks:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current "tab button" class */
+.tablinks.active {
+    background-color: #ccc;
+}
+  

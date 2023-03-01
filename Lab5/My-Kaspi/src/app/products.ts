@@ -6,6 +6,7 @@ export interface Products {
     price: number;
     source: string;
     category: string;
+    like: number;
 }
 
 
@@ -17,7 +18,8 @@ export const products = [
         rating:9.89,
         price : 333985,
         source: "https://kaspi.kz/shop/p/sony-playstation-5-belyi-100746577/?c=750000000#!/item",
-        category: "Аудио, Видео, Развлечения"
+        category: "Аудио, Видео, Развлечения",
+        like : 0
     },  
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/ha9/h54/48110926659614/apple-ipad-2021-wi-fi-64gb-seryj-102301598-1-Container.jpg",
@@ -26,7 +28,8 @@ export const products = [
         rating:9.15,
         price:178470,
         source : "https://kaspi.kz/shop/p/apple-ipad-2021-10-2-64gb-wi-fi-seryi-102301598/?c=750000000#!/item",
-        category: "Телефоны и гаджеты"
+        category: "Телефоны и гаджеты",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hd4/h60/31545786138654/detroit-become-human-ps4-10700843-1-Container.jpg",
@@ -35,7 +38,8 @@ export const products = [
         rating:100,
         price: 14990,
         source: "https://kaspi.kz/shop/p/detroit-become-human-ps4-10700843/?c=750000000#!/item",
-        category: "Аудио, Видео, Развлечения"
+        category: "Аудио, Видео, Развлечения",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/medias/sys_master/images/images/hab/hed/62948780671006/apple-iphone-14-pro-max-128gb-fioletovyj-106363342-1.jpg",
@@ -44,7 +48,8 @@ export const products = [
         rating:9.65,
         price:697999,
         source: "https://kaspi.kz/shop/p/apple-iphone-14-pro-max-256gb-fioletovyi-106363342/?c=750000000#!/item",
-        category: "Телефоны и гаджеты"
+        category: "Телефоны и гаджеты",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h3d/h1d/33957524537374/jbl-tune-510bt-cernyj-101420081-1-Container.jpg",
@@ -53,7 +58,8 @@ export const products = [
         rating:7.96,
         price:25503,
         source:"https://kaspi.kz/shop/p/jbl-tune-510bt-chernyi-101420081/?c=750000000#!/item",
-        category: "Аудио, Видео, Развлечения"
+        category: "Аудио, Видео, Развлечения",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/hf0/h05/65599304007710/instax-mini-11-fioletovyi-plenka-20-sht-103580120-2.jpg",
@@ -62,7 +68,8 @@ export const products = [
         rating:9.5,
         price:60700,
         source:"https://kaspi.kz/shop/p/instax-mini-11-fioletovyi-plenka-20-sht-103580120/?c=750000000#!/item",
-        category: "Аудио, Видео, Развлечения"
+        category: "Аудио, Видео, Развлечения",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h8e/h03/63935931252766/art-sketchbook-a4-blk-9788862931939-107190254-1.jpg",
@@ -71,7 +78,8 @@ export const products = [
         rating:8.25,
         price: 15950,
         source: "https://kaspi.kz/shop/p/moleskine-sketchbuk-art-sketchbook-a4-96-listov-chernyi-107190254/?c=750000000#!/item",
-        category: "Канцелярия"
+        category: "Канцелярия",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h69/h9e/34242100527134/lego-harry-potter-pervyj-urok-poletov-76395-101618084-1.jpg",
@@ -80,7 +88,8 @@ export const products = [
         rating:7.25,
         price: 5513,
         source:"https://kaspi.kz/shop/p/bela-harry-potter-pervyi-urok-poletov-detalei-288-sht-104758165/?c=750000000#!/item",
-        category: "Аудио, Видео, Развлечения"
+        category: "Аудио, Видео, Развлечения",
+        like : 0
 
     },
     {
@@ -90,7 +99,8 @@ export const products = [
         rating:8.76,
         price:244990,
         source: "https://kaspi.kz/shop/p/xiaomi-mi-tv-p1-50-l50m6-6arg-127-sm-chernyi-105324626/?c=750000000#!/item",
-        category: "Бытовая техника"
+        category: "Бытовая техника",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h5b/h19/48289555709982/xiaomi-bhr5055eu-mi-robot-vacuum-mop-2-belyj-103450270-1.jpg",
@@ -99,7 +109,8 @@ export const products = [
         rating:9.56,
         price: 136781,
         source: "https://kaspi.kz/shop/p/xiaomi-mi-robot-vacuum-mop-2-bhr5055eu-belyi-103450270/?c=750000000#!/item",
-        category: "Бытовая техника"
+        category: "Бытовая техника",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h6b/h33/62100002701342/asus-tuf-gaming-a15-fa506ihrb-hn084-90nr07g7-m008c0-cernyj-106255184-1.jpg",
@@ -108,7 +119,8 @@ export const products = [
         rating:9.5,
         price: 369990,
         source: "https://kaspi.kz/shop/p/asus-tuf-gaming-a15-fa506ihrb-hn084-90nr07g7-m008c0-chernyi-106255184/?c=750000000#!/item",
-        category: "Телефоны и гаджеты"
+        category: "Телефоны и гаджеты",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h86/ha5/33549396574238/amazfit-bip-u-pro-cernyj-100914321-1-Container.jpg",
@@ -117,7 +129,8 @@ export const products = [
         rating:8.96,
         price: 25368,
         source: "https://kaspi.kz/shop/p/amazfit-bip-u-pro-chernyi-100914321/?c=750000000#!/item",
-        category: "Телефоны и гаджеты"
+        category: "Телефоны и гаджеты",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h5c/h4a/33574671450142/huion-kamvas-13-cernyj-101001692-1-Container.jpg",
@@ -126,7 +139,8 @@ export const products = [
         rating:8.62,
         price: 136787,
         source: "https://kaspi.kz/shop/p/huion-kamvas-13-101001692/?c=750000000#!/item",
-        category: "Телефоны и гаджеты"
+        category: "Телефоны и гаджеты",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h5c/h40/48076324143134/deerma-dx700-belyj-3701383-4-Container.jpg  ",
@@ -135,7 +149,8 @@ export const products = [
         rating:9.42,
         price: 19698,
         source: "https://kaspi.kz/shop/p/deerma-dx700-belyi-3701383/?c=750000000#!/item",
-        category: "Бытовая техника"
+        category: "Бытовая техника",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h13/h18/51251427639326/centek-ct-1164-serebristyj-100358682-1-Container.jpg ",
@@ -144,7 +159,8 @@ export const products = [
         rating:9.26,
         price: 60410,
         source: "https://kaspi.kz/shop/p/kofevarka-centek-ct-1164-serebristyi-chernyi-100358682/?c=750000000#!/item",
-        category: "Бытовая техника"
+        category: "Бытовая техника",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h5c/h98/31820622921758/lg-f2j3ns0w-white-3601511-1-Container.jpg",
@@ -153,7 +169,8 @@ export const products = [
         rating:8.93,
         price: 191419,
         source: "https://kaspi.kz/shop/p/lg-f2j3ns0w-belyi-3601511/?c=750000000#!/item",
-        category: "Бытовая техника"
+        category: "Бытовая техника",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h1b/h1d/47523919200286/marker-2000000015347-80-cvetov-103046406-1.jpg",
@@ -162,7 +179,8 @@ export const products = [
         rating:9.16,
         price: 6848,
         source: "https://kaspi.kz/shop/p/marker-marker-2000000015347-80-sht-1-mm-mul-tikolor-103046406/?c=750000000#!/item",
-        category: "Канцелярия"
+        category: "Канцелярия",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h82/hd1/32406020653086/sonet-3541138-16x2-5-ml-100102473-1.jpg",
@@ -171,7 +189,8 @@ export const products = [
         rating:9.51,
         price: 3055,
         source: "https://kaspi.kz/shop/p/sonet-3541138-16x2-5-ml-100102473/?c=750000000#!/item",
-        category: "Канцелярия"
+        category: "Канцелярия",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/h36/h71/67414366027806/almaznaya-vyshivka-108263329-1.jpg",
@@ -180,7 +199,8 @@ export const products = [
         rating:9.32,
         price: 4849,
         source: "https://kaspi.kz/shop/p/painting-diamond-gb70061-108263329/?c=750000000#!/item",
-        category: "Канцелярия"
+        category: "Канцелярия",
+        like : 0
     },
     {
         img : "https://resources.cdn-kaspi.kz/shop/medias/sys_master/images/images/heb/h87/47100253569054/papka-konvert-erich-krause-fizzy-vivid-a4-fiksatsiya-knopka-mul-tikolor-prozrachnyi-102842687-1.jpg",
@@ -189,7 +209,8 @@ export const products = [
         rating:8.32,
         price: 250,
         source: "https://kaspi.kz/shop/p/papka-konvert-erich-krause-fizzy-vivid-a4-fiksatsija-knopka-mul-tikolor-prozrachnyi-102842687/?c=750000000#!/item",
-        category: "Канцелярия"
+        category: "Канцелярия",
+        like : 0
     },
 
 ]

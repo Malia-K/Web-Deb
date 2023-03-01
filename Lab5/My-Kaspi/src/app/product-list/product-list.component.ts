@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { products } from '../products';
+import { Products, products } from '../products';
 
 @Component({
   selector: 'app-product-list',
@@ -7,10 +7,28 @@ import { products } from '../products';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent {
-  products = [...products];
+  allproducts: Products[] = products;
+  filtered_products = [...products];
+  selectedCategory : string = "None";
+  
 
   share() {
     window.alert('The product has been shared!');
+  }
+
+
+  filterByCategory() {
+    if(this.selectedCategory == 'None') {
+      this.filtered_products = this.allproducts
+    } else {
+      this.filtered_products = this.allproducts.filter(product => product.category === this.selectedCategory);
+    }
+  }
+
+  updateFilteredProducts(value: string){
+    this.selectedCategory = value;
+    console.log(this.selectedCategory)
+    this.filterByCategory();
   }
 }
 
