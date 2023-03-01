@@ -28,10 +28,19 @@
                 </p>
             </div>
 
-            
-            <button type="button"  class = "detail-button" [routerLink] = "['/products', product.name]">
-                Read more
-            </button>
+            <div class = "buttons-tab">
+                <button type="button"  class = "detail-button" [routerLink] = "['/products', product.name]">
+                    Read more
+                </button>
+
+                <button type="button" (click)="incrementLikes(product.id)" class = "like-button">
+                    <i class="fa-solid fa-heart fa-xl" ></i>
+                    {{product.like}}
+                </button>
+                <button class="delete-button" (click) = "deleteProduct(product.id)">
+                    <i class="fa-solid fa-trash fa-xl"></i>
+                </button>
+            </div>
         </div>
     </div>
 </div>
