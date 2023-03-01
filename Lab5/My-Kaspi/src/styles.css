@@ -42,6 +42,12 @@ app-product-list{
 }
 
 
+app-product-details{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 
 
 
