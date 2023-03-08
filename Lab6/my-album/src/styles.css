@@ -19,3 +19,20 @@ app-albums{
     margin-left: 10%;
     margin-top: 20px;
 }
+
+app-album-detail{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-top: 20px;
+}
+
+app-album-photos{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 10%;
+    margin-top: 20px; */
+    justify-content: center;
+}

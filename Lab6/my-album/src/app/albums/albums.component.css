@@ -6,6 +6,7 @@ a{
 
 .action-fields{
     border: none;
+    margin-left: 120px;
 }
 
 .input-data{
@@ -26,12 +27,14 @@ a{
 }
 
 .albums-list{
+    width: 80%;
     height: 20px;
     text-decoration: none;
     font-size: 16px;
     margin: 5px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     
 }
 ul{

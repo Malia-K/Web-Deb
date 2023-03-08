@@ -1,5 +1,7 @@
-<div class="photos">
-    <h1>Photos of Album #{{getAlbumId()}}</h1>
+<div class = "photos">
+    <h1 style="margin-left: 60px;">
+        Photos of Album #{{getAlbumId()}}
+    </h1>
     <ul>
       <li *ngFor="let photo of photos">
         <a href="{{photo.url}}">
