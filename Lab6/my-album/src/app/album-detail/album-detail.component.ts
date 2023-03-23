@@ -14,6 +14,7 @@ export class AlbumDetailComponent implements OnInit {
   album: Album;
   loaded: boolean;
   newTitle: string;
+  
 
   constructor(private route: ActivatedRoute,private albumService: AlbumService) {
     this.newTitle = '';

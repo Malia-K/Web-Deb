@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Validators } from '@angular/forms';
 import { Album } from '../album-model'; 
 import { AlbumService } from '../album.service';
 
@@ -45,6 +46,15 @@ export class AlbumsComponent implements OnInit {
       this.loaded = true;
       this.newAlbum = {} as Album;
     });
+  }
+
+  inputFilter(){
+    console.log(this,this.newAlbum.title)
+    if (this.newAlbum.title) {
+      this.albums = this.albums.filter(val => val.title.indexOf(this.newAlbum.title.toLowerCase()) >= 0);
+    } else {
+      this.albums =  this.albums;
+    }
   }
 
 }

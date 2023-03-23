@@ -20,7 +20,7 @@ export const products = [
         price : 333985,
         source: "https://kaspi.kz/shop/p/sony-playstation-5-belyi-100746577/?c=750000000#!/item",
         category: "Аудио, Видео, Развлечения",
-        like : 0,
+        like : 11,
         id: 1
     },  
     {

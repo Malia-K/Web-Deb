@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { Products, products } from '../products';
 
 @Component({
@@ -6,16 +6,19 @@ import { Products, products } from '../products';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent {
+export class ProductListComponent implements OnInit {
   allproducts: Products[] = products;
   filtered_products = [...products];
   selectedCategory : string = "None";
-  
+  p = [...products];
 
   share() {
     window.alert('The product has been shared!');
   }
 
+  ngOnInit(): void {
+    this.moreThanTen();
+  }
 
   filterByCategory() {
     if(this.selectedCategory == 'None') {
@@ -32,7 +35,13 @@ export class ProductListComponent {
   }
 
   incrementLikes(id : number) {
-    products.filter(product => product.id === id).map(product => product.like += 1)
+    products.filter(product => product.id === id).map(product => product.like += 1) 
+    this.moreThanTen();
+  }
+
+  moreThanTen(){
+    this.allproducts = this.allproducts.filter(p => p.like <= 10)
+    this.filterByCategory();
   }
 
 
@@ -41,5 +50,6 @@ export class ProductListComponent {
     this.filterByCategory();
   }
 }
+
 
 

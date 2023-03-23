@@ -7,7 +7,8 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CartService {
   items: Product[] = [];
-
+  sum = 0;
+  avg = 0;
   constructor(
     private http : HttpClient
   ) { }
@@ -31,5 +32,21 @@ export class CartService {
     return this.http.get<{type: string, price: number}[]>
     ('/assets/shipping.json');
 
+  }
+
+  getSum(){
+    for (let i = 0; i < this.items.length; i++){
+      this.sum += this.items[i].price;
+    }
+    return this.sum;
+  }
+
+
+  getAverage(){
+    length = this.items.length;
+    console.log(length)
+    this.avg = this.getSum() / length;
+    console.log(this.avg)
+    return this.avg;
   }
 }

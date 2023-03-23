@@ -9,6 +9,10 @@
   <span>{{ item.price | currency }}</span>
 </div>
 
+<span>  Total sum: {{sum}} </span>
+
+<span>  Average: {{avg}} </span>
+
 
 <form [formGroup] = "checkoutForm" (ngSubmit) = "onSubmit()">
   <div>
@@ -24,6 +28,8 @@
     </label>
     <input id="address" type = "text" formControlName = "address">
   </div>
+
+
   
   
   

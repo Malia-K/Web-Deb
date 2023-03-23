@@ -1,8 +1,16 @@
 <div *ngIf="loaded">
-  <fieldset class="action-fields">
-    <input type="text" [(ngModel)]="newTitle" placeholder="Type in new album title" class = "input-data">
-    <button (click)="updateAlbumTitle()" class = "save-data">Save</button>
-  </fieldset>
+
+  <div class="top-buttons">
+    <a routerLink = "/albums">
+      Back
+    </a>
+  
+    <fieldset class="action-fields">
+      <input type="text" [(ngModel)]="newTitle" placeholder="Type in new album title" class = "input-data">
+      <button (click)="updateAlbumTitle()" class = "save-data">Save</button>
+    </fieldset>
+  </div>
+
 
   <div class = "album-detail">
     <div>

@@ -10,6 +10,8 @@ import { FormBuilder } from '@angular/forms';
 })
 export class CartComponent {
   items = this.cartService.getItems();
+  sum = this.cartService.getSum(); 
+  avg = this.cartService.getAverage();
 
   checkoutForm = this.formBuilder.group({
     name: '',
