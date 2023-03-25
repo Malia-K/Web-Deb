@@ -1,0 +1,10 @@
+def mutate_string(string, position, character):
+    to_change = list(string)
+    to_change[position] = character
+    new_str = "".join(to_change)
+    return new_str
+
+s = input()
+i, c = input().split()
+s_new = mutate_string(s, int(i), c)
+print(s_new)

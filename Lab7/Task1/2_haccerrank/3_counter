@@ -1,0 +1,19 @@
+from collections import Counter
+x = int(input())
+shoes = list(input().split())
+shoes = [int(i) for i in shoes]
+
+shoes_counter = Counter(shoes)
+
+sum = 0
+
+customer_num = int(input())
+
+for i in range(0, customer_num):
+    shoe, money = map(int, input().split())
+    
+    if(shoes_counter[shoe] != 0):
+        sum += money
+        shoes_counter[shoe] -= 1
+
+print(sum)
