@@ -10,7 +10,7 @@ todoList.addEventListener("submit", function(event){
     event.preventDefault();
     // console.log(inputData.value);
     addTodo(inputData.value);
-});
+}); 
 
 function addTodo(item){
     if(item !== ''){
@@ -28,7 +28,7 @@ function addTodo(item){
 function addToLocalStorage(todos){
     localStorage.setItem('todos', JSON.stringify(todos));
     showTodos(todos);
-}
+}  
 
 
 function showTodos(todos){
@@ -87,7 +87,7 @@ todoItems.addEventListener('click', function(event){
         // console.log("checkbox clicked")
         madeComplete(event.target.parentElement.parentElement.getAttribute('data-key'));
     }
-    const icon = document.getElementById("delete-button");
+    // const icon = document.getElementById("delete-button");
     // if(event.target.id === "delete-button"){
     //     // console.log("delete clicked")
     //     icon.classList.toggle('hidden');

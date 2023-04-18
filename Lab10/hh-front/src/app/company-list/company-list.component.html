@@ -1,0 +1,29 @@
+<h2>Companies</h2>
+
+<fieldset>
+  <label>Company name: </label>
+  <input type="text" [(ngModel)]="newName">
+
+  <label>Company description: </label>
+  <input type="text" [(ngModel)]="newDescription">
+
+  <label>Company city: </label>
+  <input type="text" [(ngModel)]="newCity">
+  
+  <label>Company address: </label>
+  <input type="text" [(ngModel)]="newAddress">
+  
+  <button (click)="addCompany()">Add company</button>
+</fieldset>
+
+
+<ul>
+  <li *ngFor="let company of companies" >
+    <div>
+      <h3>{{company.name}}</h3>
+      <p>{{company.description}}</p>
+      <p>{{company.city}}, {{company.address}}</p>
+    </div>
+  </li>
+</ul>
+

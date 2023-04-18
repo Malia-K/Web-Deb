@@ -20,8 +20,8 @@ class Product(models.Model):
             'description': self.description,
             'category': self.category,
             'count': self.count,
-            'is_active': self.is_active
-
+            'is_active': self.is_active,
+            'price_and_description': str(self.price) + self.description
         }
 
 
