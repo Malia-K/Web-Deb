@@ -1,12 +1,13 @@
 from django.urls import path
-from api import views
+from api.views import *
 
 urlpatterns = [
-    path('companies/', views.company_list),
-    path('companies/<int:company_id>/', views.company_detail),
-    path('companies/<int:company_id>/vacancies', views.list_of_vacancies_by_company),
-    path('vacancies/', views.vacancy_list),
-    path('vacancies/<int:vacancy_id>/', views.vacancy_detail),
-    path('vacancies/top_ten', views.vacancy_top_ten)
+    path('companies/', company_view.CompanyListApi.as_view()),
+    path('companies/<int:company_id>/', company_view.CompanyDetailApi.as_view()),
+    path('companies/<int:company_id>/vacancies', vacancy_view.getCompanyVacancies),
+
+    path('vacancies/', vacancy_view.vacancy_list),
+    path('vacancies/<int:vacancy_id>/', vacancy_view.vacancy_detail),
+    path('vacancies/top_ten', vacancy_view.vacancy_top_ten)
 
 ]

@@ -12,5 +12,5 @@ export interface Vacancy{
     name : string;
     description: string;
     salary: number;
-    company : Company;
+    company : number;
 }
