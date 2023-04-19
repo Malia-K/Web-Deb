@@ -50,7 +50,7 @@ export class BackendService {
   }
 
   updateCompany(id: number, name: string, description: string, city:string, address: string): Observable<Company> {
-    return this.client.put<Company>( `${this.BASE_URL}/api/companies/${id}`,
+    return this.client.put<Company>( `${this.BASE_URL}/api/companies/${id}/`,
       { 
         name: name, 
         description: description, 
@@ -79,7 +79,7 @@ export class BackendService {
   }
 
   updateVacancy(id: number, name: string, description: string,salary : number, companyId: number ): Observable<Vacancy> {
-    return this.client.put<Vacancy>( `${this.BASE_URL}/api/vacancies/${id}`,
+    return this.client.put<Vacancy>( `${this.BASE_URL}/api/vacancies/${id}/`,
       { 
         name: name, 
         description: description, 

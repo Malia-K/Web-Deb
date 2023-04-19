@@ -10,6 +10,8 @@ import { FormsModule } from '@angular/forms';
 import { TopBarComponent } from './top-bar/top-bar.component';
 import { VacancyListComponent } from './vacancy-list/vacancy-list.component';
 import { CompanyDetailComponent } from './company-detail/company-detail.component';
+import { UpdateCompanyComponent } from './update-company/update-company.component';
+import { UpdateVacancyComponent } from './update-vacancy/update-vacancy.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +19,9 @@ import { CompanyDetailComponent } from './company-detail/company-detail.componen
     CompanyListComponent,
     TopBarComponent,
     VacancyListComponent,
-    CompanyDetailComponent
+    CompanyDetailComponent,
+    UpdateCompanyComponent,
+    UpdateVacancyComponent
   ],
   imports: [
     BrowserModule,
@@ -27,8 +31,11 @@ import { CompanyDetailComponent } from './company-detail/company-detail.componen
     RouterModule.forRoot([
       { path: 'companies', component: CompanyListComponent},
       { path: 'vacancies', component: VacancyListComponent},
-      { path: 'companies/:id', component: VacancyListComponent},
+      { path: 'companies/:id', component: CompanyDetailComponent},
+      { path: 'companies/:id/update', component: UpdateCompanyComponent},
+      { path: 'vacancies/:id/update', component: UpdateVacancyComponent},
       { path: '', redirectTo:"companies", pathMatch: 'full'},
+      
       // { path: '', component: ProductDetailsComponent },
     ])
   ],

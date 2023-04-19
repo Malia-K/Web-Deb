@@ -46,3 +46,34 @@ app-vacancy-list{
   justify-content: center;
   padding: 20px 80px 20px 80px;
 }
+
+
+app-company-detail{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 160px);
+  margin-top:90px;
+  justify-content: center;
+  padding: 20px 80px 20px 80px;
+}
+
+
+
+
+app-update-company{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 160px);
+  margin-top:90px;
+  justify-content: center;
+  padding: 20px 80px 20px 80px;
+}
+
+app-update-vacancy{
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 160px);
+  margin-top:90px;
+  justify-content: center;
+  padding: 20px 80px 20px 80px;
+}

@@ -28,7 +28,7 @@
 
 
       <div class="upd-del-btn">
-        <button class="upd-btn">Update</button>
+        <button class="upd-btn" routerLink = '/companies/{{company.id}}/update'>Update</button>
         <button class="del-btn" (click) = "deleteCompany(company.id)">Delete</button>
       </div>
     </div>
