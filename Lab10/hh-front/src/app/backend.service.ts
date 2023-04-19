@@ -68,7 +68,7 @@ export class BackendService {
 
 
   createVacancy(name: string, description: string, salary : number, companyId: number): Observable<Vacancy> {
-    return this.client.post<Vacancy>( `${this.BASE_URL}/api/vacancies`,
+    return this.client.post<Vacancy>( `${this.BASE_URL}/api/vacancies/`,
       { 
         name: name, 
         description: description, 

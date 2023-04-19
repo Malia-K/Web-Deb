@@ -7,11 +7,17 @@ import { HttpClientModule } from '@angular/common/http';
 import { CompanyListComponent } from './company-list/company-list.component'
 import { RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { TopBarComponent } from './top-bar/top-bar.component';
+import { VacancyListComponent } from './vacancy-list/vacancy-list.component';
+import { CompanyDetailComponent } from './company-detail/company-detail.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CompanyListComponent
+    CompanyListComponent,
+    TopBarComponent,
+    VacancyListComponent,
+    CompanyDetailComponent
   ],
   imports: [
     BrowserModule,
@@ -20,6 +26,8 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     RouterModule.forRoot([
       { path: 'companies', component: CompanyListComponent},
+      { path: 'vacancies', component: VacancyListComponent},
+      { path: 'companies/:id', component: VacancyListComponent},
       { path: '', redirectTo:"companies", pathMatch: 'full'},
       // { path: '', component: ProductDetailsComponent },
     ])

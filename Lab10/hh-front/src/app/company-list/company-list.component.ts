@@ -43,11 +43,15 @@ export class CompanyListComponent implements OnInit  {
         this.newAddress = '';
       });
     }
+
+    
   }
 
-  // deleteCompany(Company_id: number) {
-  //   this.backendService.deleteCompany(Company_id).subscribe((data) => {
-  //     this.categories = this.categories.filter((Company) => Company.id !== Company_id);
-  //   });
-  // }
+
+
+  deleteCompany(company_id: number) {
+    this.backendService.deleteCompany(company_id).subscribe((data) => {
+      this.companies = this.companies.filter((Company) => Company.id !== company_id);
+    });
+  }
 }
